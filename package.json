@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/hanyucd/lottery-es6/issues"
   },
-  "homepage": "https://github.com/hanyucd/lottery-es6#readme"
+  "homepage": "https://github.com/hanyucd/lottery-es6#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-livereload": "^4.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "vinyl-named": "^1.1.0",
+    "webpack": "^4.29.6",
+    "webpack-stream": "^5.2.1",
+    "yargs": "^13.2.2"
+  }
 }
