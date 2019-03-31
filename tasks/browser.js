@@ -1,12 +1,16 @@
-// 文件监听，浏览器热更新
+/*
+ * 文件监听，浏览器热更新
+ */
 
 import gulp from 'gulp';
 import args from "./util/args";
 
 gulp.task('browser', (cb) => {
-  if (!args.watch) return cb();
-  
-  gulp.watch('src/**/*.js', ['scripts']); // 监听 js 文件，热更新
-  gulp.watch('src/**/*.ejs', ['pages']); // 监听 ejs 文件，热更新
-  gulp.watch('src/**/*.css', ['styles']); // 监听 css 文件，热更新
-});
+
+    if (!args.watch) return cb();
+
+    gulp.watch('src/**/*.js', ['scripts']); // 监听 js 文件，热更新
+    gulp.watch('src/**/*.ejs', ['pages']); // 监听 ejs 文件，热更新
+    gulp.watch('src/**/*.css', ['styles']); // 监听 css 文件，热更新
+
+})
