@@ -17,10 +17,10 @@ export default class Timer {
           
       let last_time = end - now; // 时间差
 
-      let d = Math.floor(last_time / d_to_ms);
-      let h = Math.floor((last_time - d * d_to_ms) / h_to_ms);
-      let m = Math.floor((last_time - d * d_to_ms - h * h_to_ms) / m_to_ms);
-      let s = Math.floor((last_time - d * d_to_ms - h * h_to_ms - m * m_to_ms) / s_to_ms);
+      let d = Math.floor(last_time / d_to_ms); // 计算 天
+      let h = Math.floor((last_time - d * d_to_ms) / h_to_ms); // 计算 小时
+      let m = Math.floor((last_time - d * d_to_ms - h * h_to_ms) / m_to_ms); // 计算 分钟
+      let s = Math.floor((last_time - d * d_to_ms - h * h_to_ms - m * m_to_ms) / s_to_ms); // 计算 秒
 
       let arr = [];
       if (d > 0) arr.push(`${d}天`);
