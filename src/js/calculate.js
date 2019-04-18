@@ -41,7 +41,7 @@ export default class Calculate {
    */
   calcCount(activeCount, playType) {
     let count = 0; // 默认注数为 0
-    const exist = this.play_list.has(playType); // play_list是 map数据结构，有 has 来判断 | 判断玩法列表中是否存在该玩法
+    const exist = this.playList.has(playType); // playList是 map数据结构，有 has 来判断 | 判断玩法列表中是否存在该玩法
     const arr = new Array(activeCount).fill('0');
 
     // charAt() 返回指定位置的字符
@@ -97,7 +97,7 @@ export default class Calculate {
     }
     // 返回金额范围
     return [min, max].map(item => {
-      return item * self.play_list.get(playType).bonus;
+      return item * self.playList.get(playType).bonus;
     });
   }
 }
